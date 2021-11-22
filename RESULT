@@ -1,0 +1,6 @@
+GET /Microsoft-Server-ActiveSync HTTP/1.1
+Authorization: Basic xxxxxxxxxxxxxxxxxxxxxxxxxx====
+User-Agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.1151
+Host: outlook.office365.com
+Connection: close
+
