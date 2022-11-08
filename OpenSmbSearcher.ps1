@@ -10,7 +10,7 @@ foreach($c in $computers){
     Clear-Variable check -ErrorAction SilentlyContinue
     $target = $c.DNSHostName
     if($c.dnshostname){
-        $shared = (net view \\$target) | % { if($_.IndexOf(' Disk ') -gt 0){ $_.Split('  ')[0] } }
+        $shared = (net view \\$target /all) | % { if($_.IndexOf(' Disk ') -gt 0){ $_.Split('  ')[0] } }
         ""
         $target
         foreach($s in $shared){
